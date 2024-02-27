@@ -31,9 +31,8 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 100vh;
   text-align: center;
-  width: 400px;
+  width: 450px;
   height: auto;
   border-radius: 15px;
   overflow: hidden;
@@ -45,15 +44,19 @@ main {
 }
 
 .info-section {
-  padding: 30px 30px;
+  padding: 30px 47px;
 }
 
 .text-info {
   padding-bottom: 30px;
 }
 
+.text-info h2{
+  padding-bottom: 18px;
+}
+
 .price-section {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -67,7 +70,12 @@ main {
 .price-section a {
   font-weight: 700;
   color: var(--bright-blue);
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.price-section a:hover {
+  text-decoration: none;
+  color: #766CF1;
 }
 
 .direction-price {
@@ -97,6 +105,7 @@ main {
 }
 .button div a {
   text-decoration: none;
+  padding: 5px 5px;
 }
 
 .button div:first-child {
@@ -105,21 +114,66 @@ main {
   box-shadow: 0px 15px 10px var(--pale-blue);
 }
 
+.button div:first-child:hover {
+  background-color: #766CF1;
+  box-shadow: 0px 15px 10px var(#766CF1);
+  border: 1px solid #766CF1;
+}
+
 .button div:first-child a {
   color: var(--pale-blue);
+
 }
 
 .button div:last-child a {
+  color: var(--desaturated-blue);
+}
+
+.button div:last-child a:hover {
   color: var(--dark-blue);
 }
+
+
 
 footer {
   position: absolute;
   bottom: 0;
+  font-size: 12px;
 }
 .attribution {
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+@media only screen and (max-width: 375px){
+  body{
+    margin: 0px 30px;
+  }
+  main{
+    width: 300px;
+    
+    font-size: 13px;
+  }
+  .info-section {
+    padding: 15px 41px;
+  }
+  .text-info {
+    padding-bottom: 20px;
+  }
+  
+  .text-info h2{
+    padding-bottom: 14px;
+  }
+
+  .price-section {
+    padding-bottom: 25px;
+  }
+  footer{
+    font-size: 12px;
+  }
 }
