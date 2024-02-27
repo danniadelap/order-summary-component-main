@@ -134,22 +134,6 @@ main {
 }
 
 
-
-footer {
-  position: absolute;
-  bottom: 0;
-  font-size: 12px;
-}
-.attribution {
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-
 @media only screen and (max-width: 375px){
   body{
     margin: 0px 30px;
@@ -173,7 +157,5 @@ footer {
   .price-section {
     padding-bottom: 25px;
   }
-  footer{
-    font-size: 12px;
-  }
+
 }
