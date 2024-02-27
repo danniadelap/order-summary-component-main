@@ -1,0 +1,125 @@
+:root {
+  --font-size-paragraph: 16px;
+  --family-font: "Red Hat Display", sans-serif;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+body {
+  font-size: var(--font-size-paragraph);
+  font-family: var(--family-font);
+  background-color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--very-pale-blue);
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.info-section {
+  padding: 30px 30px;
+}
+
+.text-info {
+  padding-bottom: 30px;
+}
+
+.price-section {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.column-prices p:first-child {
+  font-weight: 700;
+}
+
+.price-section a {
+  font-weight: 700;
+  color: var(--bright-blue);
+  font-size: 14px;
+}
+
+.direction-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.button div {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.button div a {
+  text-decoration: none;
+}
+
+.button div:first-child {
+  background-color: var(--bright-blue);
+  border: 1px solid var(--dark-blue);
+  box-shadow: 0px 15px 10px var(--pale-blue);
+}
+
+.button div:first-child a {
+  color: var(--pale-blue);
+}
+
+.button div:last-child a {
+  color: var(--dark-blue);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
